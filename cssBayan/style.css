@@ -1,9 +1,7 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	width: 100%;
-	min-height: 100vh;
 	font-size: 30px;
-	color: #fff;
 	background-color: rgb(190, 164, 129)
 }
 
@@ -12,27 +10,29 @@ h1 {
 }
 
 .acc-kontainer {
-	width: 90%;
-	max-width: 700px;
-	margin: 20px auto;
+	max-width: 80vh;
+	margin: 5rem auto;
 	cursor: pointer;
 }
 
+
+
 .acc-item {
-	border: 2px solid #af7676;
-	margin-bottom: 5px;
+	border-top: .3vh solid #af7676;
 }
 
 .acc-title {
 	display: flex;
 	justify-content: space-between;
-	padding: 10px 15px;
+	padding: 1vh 3vh;
 	transition: background-color .4s ease-out;
 	cursor: pointer;
+	color: #fff;
 }
 
 .acc-title:hover {
 	background-color: #af7676;
+
 }
 
 .acc-input {
@@ -58,9 +58,15 @@ h1 {
 
 .acc-input:checked~.acc-image {
 	display: block;
+	height: 100%
 }
 
 .acc-image {
 	display: none;
-	padding: 10px 15px;
+	text-align: -webkit-center;
+}
+
+.acc-image img {
+	width: 80%;
+	margin-top: 1vh;
 }
